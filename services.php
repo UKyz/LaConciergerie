@@ -156,7 +156,7 @@
 <script src="assets/js/main.js"></script>
 
 <script>
-    var app = new Vue({
+    const app = new Vue({
         el: '#vueapp',
         data: {
             service: '',

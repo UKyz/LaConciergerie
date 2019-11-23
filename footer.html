@@ -1,5 +1,5 @@
-<div id="footer">
-  <div class="container">
+<div id="footer" xmlns:v-bind="http://www.w3.org/1999/xhtml">
+  <div class="container" id='footerapp'>
     <div class="row">
 
       <!-- Logo -->
@@ -53,38 +53,10 @@
           <h2 class="icon solid fa-book circled"><span class="label">Livre d'or</span></h2>
         </header>
         <ul class="divided">
-          <li>
+          <li v-for="comment in comments">
             <article class="post stub">
               <header>
-                <h4><a href="#">Dernier commentaire du livre d'or</a></h4>
-              </header>
-            </article>
-          </li>
-          <li>
-            <article class="post stub">
-              <header>
-                <h4><a href="#">Avant dernier commentaire</a></h4>
-              </header>
-            </article>
-          </li>
-          <li>
-            <article class="post stub">
-              <header>
-                <h4><a href="#">Celui d'avant qui était vraiment top !</a></h4>
-              </header>
-            </article>
-          </li>
-          <li>
-            <article class="post stub">
-              <header>
-                <h4><a href="#">Encore un pour la route ;)</a></h4>
-              </header>
-            </article>
-          </li>
-          <li>
-            <article class="post stub">
-              <header>
-                <h4><a href="#">Et TADA !</a></h4>
+                <h4><a v-bind:href="'about-us.php#'+ comment.id">{{comment.comment}}</a></h4>
               </header>
             </article>
           </li>
@@ -108,6 +80,34 @@
     </div>
   </div>
 </div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+<script>
+  const app = new Vue({
+    el: '#footerapp',
+    data: {
+      comments: []
+    },
+    mounted: function () {
+      this.getComments()
+    },
+
+    methods: {
+      getComments: function(){
+        axios.get('api/guestBook.php?limit=5&order=day')
+                .then(function (response) {
+                  console.log(response.data);
+                  app.comments = response.data;
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
+      }
+    }
+  })
+</script>
 
 <!--
 <div id="footer">
