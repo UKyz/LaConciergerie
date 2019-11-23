@@ -3140,7 +3140,23 @@ input, select, textarea {
 .carousel h3 {
 	color: #cc4889
 }
+.pink-title {
+	color: #cc4889
+}
 
+/****************************************
+* About-us *
+*****************************************/
+#contact-about-us {
+	list-style: none;
+}
+#contact-about-us li {
+	padding: 7px 0;
+}
+
+/****************************************
+* Footer *
+*****************************************/
 #footer-logo {
 	padding: 1em 2em;
 }
