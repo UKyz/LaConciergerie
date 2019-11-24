@@ -87,7 +87,7 @@
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 
 <script>
-  const app = new Vue({
+  const appFooter = new Vue({
     el: '#footerapp',
     data: {
       comments: []
@@ -101,7 +101,7 @@
         axios.get('api/guestBook.php?limit=5&order=day')
                 .then(function (response) {
                   console.log(response.data);
-                  app.comments = response.data;
+                  appFooter.comments = response.data;
                 })
                 .catch(function (error) {
                   console.log(error);
