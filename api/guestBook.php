@@ -1,11 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root";
-$password = "root";
-$dbname = "laconciergerie";
-$id = '';
 
-$con = mysqli_connect($host, $user, $password,$dbname);
+$connection = require 'config.php';
+$con = $connection();
+
+$id = '';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
