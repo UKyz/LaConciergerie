@@ -15,6 +15,7 @@
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
+      <img src="images/logo.png" id="header-logo">
 
 			<!-- Header -->
 				<div id="header">
