@@ -3247,3 +3247,7 @@ input, select, textarea {
 	color: #cc4889;
 	transition: background-color 0.35s ease-in-out, color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
 }
+
+ul.divided {
+	width: fit-content;
+}
