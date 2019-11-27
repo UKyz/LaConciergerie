@@ -3167,10 +3167,7 @@ input, select, textarea {
 	color: #cc4889
 }
 #header-logo {
-	width: 200px;
-	position: absolute;
-	z-index: 1;
-	margin: 50px 10px;
+	width: 300px;
 }
 
 

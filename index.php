@@ -15,7 +15,6 @@
 	</head>
 	<body class="homepage is-preload">
 		<div id="page-wrapper">
-      <img src="images/logo.png" id="header-logo">
 
 			<!-- Header -->
 				<div id="header">
@@ -23,7 +22,8 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>
+								<!--<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>-->
+                <img src="images/logo.png" id="header-logo">
 								<hr />
 								<p>Vous avez besoin d'un coup de main ?<br/>
 									Nous somme là pour ça.</p>
