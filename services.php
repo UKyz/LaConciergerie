@@ -78,10 +78,25 @@
             Rechercher un service :
             <input type="text" placeholder="Peinture, Promener les chiens, Garde d'enfant ..."/>
           </p>
+        </section>
+        <section>
           <div class="row">
-            <div class="col-2">
-              <p>
-                Filtres :
+            <div class="col-3">
+              <h5>Filtres :</h5>
+              <div id="services-filters">
+                Type de service:
+                <form>
+                  <div class="checkbox">
+                    <input type="checkbox" name="type" id="type"><label for="type">Option 1</label>
+                  </div>
+                  <div class="checkbox">
+                    <label><input type="checkbox" value="">Option 2</label>
+                  </div>
+                  <div class="checkbox disabled">
+                    <label><input type="checkbox" value="" disabled>Option 3</label>
+                  </div>
+                </form>
+              </div>
                 <select name="type">
                   <option value="type1">Variable</option>
                   <option value="type1">1h</option>
@@ -89,26 +104,42 @@
                   <option value="type3">Demi-journée</option>
                   <option value="type4">Journée</option>
                 </select>
-              </p>
             </div>
-            <div class="col-10">
-              <table>
-                <tr>
-                  <th>Service</th>
-                  <th>Description</th>
-                  <th>Tarif</th>
-                  <th>Durée</th>
-                </tr>
-                </thead>
-                <tbody>
-                <tr v-for="service in services">
-                  <td>{{service.name}}</td>
-                  <td>{{service.description}}</td>
-                  <td>{{service.price}}</td>
-                  <td>{{service.duration}}</td>
-                </tr>
-                </tbody>
-              </table>
+            <div class="col-9">
+              <div class="row">
+                <div class="col-5 service-article logo-writting">
+                  <h3 class="card-title">Menage</h3>
+                  <table>
+                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
+                    <tr><td>Durée :</td><td>1h minimum</td></tr>
+                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                  </table>
+                </div>
+                <div class="col-5 service-article logo-writting">
+                  <h3 class="card-title">Jardinage</h3>
+                  <table>
+                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
+                    <tr><td>Durée :</td><td>1h minimum</td></tr>
+                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                  </table>
+                </div>
+                <div class="col-5 service-article logo-writting">
+                  <h3 class="card-title">Garde d'enfants</h3>
+                  <table>
+                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
+                    <tr><td>Durée :</td><td>1h minimum</td></tr>
+                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                  </table>
+                </div>
+                <div class="col-5 service-article logo-writting">
+                  <h3 class="card-title">Bricolage</h3>
+                  <table>
+                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
+                    <tr><td>Durée :</td><td>1h minimum</td></tr>
+                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                  </table>
+                </div>
+              </div>
             </div>
           </div>
 

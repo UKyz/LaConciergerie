@@ -3137,17 +3137,16 @@ input, select, textarea {
 
 	}
 
-.carousel h3 {
-	color: #cc4889
-}
+
+/****************************************
+* Global *
+*****************************************/
 .pink-title {
 	color: #cc4889
 }
-
 .logo-writting {
 	font-family: 'Satisfy', cursive;
 }
-
 .logo-writting-2 {
 	font-family: 'Montserrat', sans-serif;
 }
@@ -3165,9 +3164,60 @@ input, select, textarea {
 }
 
 /****************************************
+* Nav *
+*****************************************/
+.dropotron li a, .dropotron li span {
+	text-align: center;
+}
+
+
+/****************************************
+* Index page *
+*****************************************/
+.carousel h3 {
+	color: #cc4889
+}
+#header-logo {
+	width: 300px;
+}
+
+
+/****************************************
 * Services *
 *****************************************/
+#services-filters>ul>li {
+	list-style: none;
+}
 
+.card-title {
+	color: red;
+	font-weight: bold;
+	font-size: x-large;
+}
+
+.service-article {
+	padding: 15px;
+	margin: 15px;
+	border: thick double #cc4889;
+	text-align: center;
+	background-color: rgba(204, 72, 138, 0.15);
+	transform: rotate(-4deg);
+	background-image: url("/images/pin.png");
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: top -5px right;
+}
+.service-article>table {
+	text-align: left;
+	margin: 15px 0 0 0;
+}
+.card-table {
+	width: 30%;
+}
+.card-service-pres {
+	height: 100px;
+	overflow-y: scroll;
+}
 
 /****************************************
 * About-us *

@@ -22,8 +22,8 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>
-<!--								<h2><a href="index.php" id="logo" class="logo-writting-2">DES ROSATI</a></h2>-->
+								<!--<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>-->
+                <img src="images/logo.png" id="header-logo">
 								<hr />
 								<p>PRENEZ DU TEMPS POUR VOUS<br/>
                                     LA CONCIERGERIE S’OCCUPE DE TOUT</p>
