@@ -10,7 +10,7 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-    <link href="https://fonts.googleapis.com/css?family=Satisfy&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy&display=swap" rel="stylesheet">
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="homepage is-preload">
@@ -23,9 +23,10 @@
 						<div class="inner">
 							<header>
 								<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>
+<!--								<h2><a href="index.php" id="logo" class="logo-writting-2">DES ROSATI</a></h2>-->
 								<hr />
-								<p>Vous avez besoin d'un coup de main ?<br/>
-									Nous somme là pour ça.</p>
+								<p>PRENEZ DU TEMPS POUR VOUS<br/>
+                                    LA CONCIERGERIE S’OCCUPE DE TOUT</p>
 							</header>
 							<footer>
 								<a href="#banner" class="button circled scrolly">Découvrir</a>
@@ -40,7 +41,7 @@
 			<!-- Banner -->
 				<section id="banner">
 					<header>
-						<h2><strong class="logo-writting" style="margin-right: 10px">La Conciergerie</strong> votre allié au quotidien.</h2>
+						<h2><strong class="logo-writting" style="margin-right: 10px; font-size: 1.2em">La Conciergerie</strong> votre allié au quotidien.</h2>
 						<p>
 							Détendez-vous et venez découvrir tous ce que nous pouvons <br/> faire pour vous rendre la vie meilleure.
 						</p>
