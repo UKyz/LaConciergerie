@@ -32,8 +32,14 @@
 								<a href="#banner" class="button circled scrolly">Découvrir</a>
 							</footer>
 						</div>
+          <p id="header-phone">
+            <span class="icon solid fa-phone-alt"> : 06 16 56 43 50</span>
+          </p>
+          <p id="header-mail">
+            <span class="icon solid fa-mail-bulk"> : laconciergerie@gmail.com</span>
+          </p>
 
-					<!-- Nav -->
+          <!-- Nav -->
 						<?php include 'nav.html';?>
 
 				</div>

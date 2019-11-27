@@ -3180,6 +3180,19 @@ input, select, textarea {
 #header-logo {
 	width: 300px;
 }
+#header-phone, #header-mail {
+	font-weight: bold;
+	font-size: large;
+	color: white;
+	bottom: 0;
+	position: absolute;
+}
+#header-phone {
+	left: 10px;
+}
+#header-mail {
+	right: 10px;
+}
 
 
 /****************************************
