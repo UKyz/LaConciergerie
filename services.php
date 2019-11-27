@@ -109,34 +109,79 @@
               <div class="row">
                 <div class="col-5 service-article logo-writting">
                   <h3 class="card-title">Menage</h3>
+                  <img src="images/pin.png" class="card-pin" alt="">
                   <table>
-                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
-                    <tr><td>Durée :</td><td>1h minimum</td></tr>
-                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                    <tr>
+                      <td class="card-table-head">Tarif</td>
+                      <td>20€</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Durée</td>
+                      <td>1h</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Description</td>
+                      <td class="card-service-pres">Prestation de ménage de tout ordre selon demande
+                        <br/>
+                        Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere
+                        accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla
+                        convallis ut venenatis purus lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices
+                        tempor sagittis.</td>
+                    </tr>
                   </table>
                 </div>
                 <div class="col-5 service-article logo-writting">
                   <h3 class="card-title">Jardinage</h3>
+                  <img src="images/pin.png" class="card-pin" alt="">
                   <table>
-                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
-                    <tr><td>Durée :</td><td>1h minimum</td></tr>
-                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                    <tr>
+                      <td class="card-table-head">Tarif</td>
+                      <td>35€</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Durée</td>
+                      <td>1h30</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Description</td>
+                      <td class="card-service-pres">Entretien du jardin, tonte de pelouse, arrosage...</td>
+                    </tr>
                   </table>
                 </div>
                 <div class="col-5 service-article logo-writting">
                   <h3 class="card-title">Garde d'enfants</h3>
+                  <img src="images/pin.png" class="card-pin" alt="">
                   <table>
-                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
-                    <tr><td>Durée :</td><td>1h minimum</td></tr>
-                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                    <tr>
+                      <td class="card-table-head">Tarif</td>
+                      <td>25€</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Durée</td>
+                      <td>1h</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Description</td>
+                      <td class="card-service-pres">Garde d'enfant à domicile, aide aux devoirs</td>
+                    </tr>
                   </table>
                 </div>
                 <div class="col-5 service-article logo-writting">
                   <h3 class="card-title">Bricolage</h3>
+                  <img src="images/pin.png" class="card-pin" alt="">
                   <table>
-                    <tr><td class="card-table">Tarif :</td><td>20€</td></tr>
-                    <tr><td>Durée :</td><td>1h minimum</td></tr>
-                    <tr><td>Description :</td><td class="card-service-pres">Prestation de ménage de tout ordre selon demande</td></tr>
+                    <tr>
+                      <td class="card-table-head">Tarif</td>
+                      <td>15€</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Durée</td>
+                      <td>45min</td>
+                    </tr>
+                    <tr>
+                      <td class="card-table-head">Description</td>
+                      <td class="card-service-pres">Réparations, plomberie, menus travaux...</td>
+                    </tr>
                   </table>
                 </div>
               </div>

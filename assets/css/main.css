@@ -3189,34 +3189,38 @@ input, select, textarea {
 	list-style: none;
 }
 
-.card-title {
-	color: red;
-	font-weight: bold;
-	font-size: x-large;
-}
-
 .service-article {
 	padding: 15px;
 	margin: 15px;
 	border: thick double #cc4889;
+	border-radius: 10px;
 	text-align: center;
 	background-color: rgba(204, 72, 138, 0.15);
 	transform: rotate(-4deg);
-	background-image: url("/images/pin.png");
-	background-size: 70px;
-	background-repeat: no-repeat;
-	background-position: top -5px right;
+}
+.card-title {
+	text-shadow: 3px 3px 5px #cc4889;
+	font-weight: bold;
+	font-size: x-large;
+}
+.card-pin {
+	width: 70px;
+	position: absolute;
+	top: -10px;
+	right: 0;
 }
 .service-article>table {
 	text-align: left;
 	margin: 15px 0 0 0;
 }
-.card-table {
+.card-table-head {
 	width: 30%;
+	font-weight: bold;
+	padding-bottom: 5px;
 }
 .card-service-pres {
-	height: 100px;
-	overflow-y: scroll;
+	max-height: 100px;
+	overflow: auto;
 }
 
 /****************************************
