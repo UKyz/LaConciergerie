@@ -22,7 +22,7 @@
     <!-- Inner -->
     <div class="inner">
       <header>
-        <h1><a href="index.php" id="logo">La Conciergerie</a></h1>
+        <a href="index.php" id="logo"><img src="images/logo3.png" class="header-logo"></a>
       </header>
     </div>
 
