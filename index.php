@@ -23,7 +23,7 @@
 						<div class="inner">
 							<header>
 								<!--<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>-->
-                <img src="images/logo.png" id="header-logo">
+                <img src="images/logo3.png" id="header-logo">
 								<hr />
 								<p>PRENEZ DU TEMPS POUR VOUS<br/>
                                     LA CONCIERGERIE S’OCCUPE DE TOUT</p>
@@ -49,8 +49,8 @@
 					<header>
 						<h2><strong class="logo-writting" style="margin-right: 10px; font-size: 1.2em">La Conciergerie</strong> votre allié au quotidien.</h2>
 						<p>
-							Détendez-vous et venez découvrir tous ce que nous pouvons <br/> faire pour vous rendre la vie meilleure.
-						</p>
+                            Reposez-vous sur nous, on vous propose<br/>UNE PALETTE DE SERVICES SUR MESURE
+                        </p>
 					</header>
 				</section>
 
@@ -58,85 +58,127 @@
 				<section class="carousel">
 					<div class="reel">
 
+                        <article>
+                            <a href="#" class="image featured"><img src="images/shopping.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS COURSES ET DRIVE</a></h3>
+                            </header>
+                            <p>Nous effectuons vos courses en magasin ou retirons vos commandes au drive.</p>
+                        </article>
+
 						<article>
 							<a href="#" class="image featured"><img src="images/laverie.jpg" alt="" /></a>
 							<header>
-								<h3><a href="#">S'occuper de votre linge</a></h3>
+								<h3><a href="#">VOTRE LINGE</a></h3>
 							</header>
-							<p>Laissez nous s'occuper<br/> de votre lessive.</p>
+							<p>Nous pouvons nous occupons de récupèrer, laver, repasser et ramener votre linge.</p>
 						</article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/voiture.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOTRE VOITURE</a></h3>
+                            </header>
+                            <p>Nous venons chercher votre véhicule, l’amènons au garage, contrôle technique ou à la station de lavage.</p>
+                        </article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/administratif.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS DÉMARCHES</a></h3>
+                            </header>
+                            <p>Nous gèrons pour vous les démarches à la mairie, à la préfecture, aux impôts, auprès des assurances.</p>
+                        </article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/temps.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOTRE TEMPS</a></h3>
+                            </header>
+                            <p>Nous restons à votre domicile en cas d’intervention ou bien dans l’attente d’un colis.</p>
+                        </article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/meuble.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS MEUBLES</a></h3>
+                            </header>
+                            <p>Nous nous occupons d'aller chercher et montons pour vous vos meubles.</p>
+                        </article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/animal.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOTRE ANIMAL</a></h3>
+                            </header>
+                            <p>Nous accompagnons votre animal chez le vétérinaire, le toiletteur.</p>
+                        </article>
+
+                        <article>
+                            <a href="#" class="image featured"><img src="images/nettoyage.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOTRE MENAGE</a></h3>
+                            </header>
+                            <p>Je range et nettoie toute la maison (lavage sol, vitres, poussière...).</p>
+                        </article>
 
 						<article>
 							<a href="#" class="image featured"><img src="images/peinture.jpg" alt="" /></a>
 							<header>
-								<h3><a href="#">Besoin d'un coup de main ?</a></h3>
+								<h3><a href="#">VOTRE CHEZ VOUS</a></h3>
 							</header>
-							<p>La peinture ? Ne vous embêtez pas, on peut s'en charger</p>
+							<p>Nous effectuons pour vous des petits travaux intérieurs (peinture, tapisserie, fixation d’étagères...) et extérieurs (jardinage, débarras).</p>
 						</article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/plombier.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Du bricolage</a></h3>
-							</header>
-							<p>Un peu de bricolage à la maison ? Laissez-nous vous aider.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/interieur.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS VACANCES</a></h3>
+                            </header>
+                            <p>Nous nous occupons de votre maison lorsque vous partez en vacances (relevé du courrier, aération, arrosage des plantes...).</p>
+                        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/jardin.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">S'occuper de votre jardin</a></h3>
-							</header>
-							<p>Nous pouvons vous<br/> aider pour ça aussi.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/repas.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOTRE REPAS</a></h3>
+                            </header>
+                            <p>Nous vous livrons un panier repas, un sandwich et peux même vous les confectionner sur mesure.</p>
+                        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Varius magnis sollicitudin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/electricien.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS DEVIS</a></h3>
+                            </header>
+                            <p>Nous trouvons, pour vous, le professionnel qu’il vous faut (nounou, plombier, coiffeur, esthéticienne...).</p>
+                        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic01.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Pulvinar sagittis congue</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/fete.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS RECEPTIONS / EVENEMENTS</a></h3>
+                            </header>
+                            <p>Vous avez des invités de dernières minute, organisez un anniversaire, nous nous occupons de tout préparer pour vous.</p>
+                        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic02.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Fermentum sagittis proin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/activite.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS LOISIRS</a></h3>
+                            </header>
+                            <p>Nous réservons pour vous vos transports, activités adulte ou enfant, spectacles, restaurants, et même vos cadeaux.
+                            </p>
+                        </article>
 
-						<article>
-							<a href="#" class="image featured"><img src="images/pic03.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Sed quis rhoncus placerat</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic04.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Ultrices urna sit lobortis</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
-
-						<article>
-							<a href="#" class="image featured"><img src="images/pic05.jpg" alt="" /></a>
-							<header>
-								<h3><a href="#">Varius magnis sollicitudin</a></h3>
-							</header>
-							<p>Commodo id natoque malesuada sollicitudin elit suscipit magna.</p>
-						</article>
+                        <article>
+                            <a href="#" class="image featured"><img src="images/tombe.jpg" alt="" /></a>
+                            <header>
+                                <h3><a href="#">VOS TOMBES</a></h3>
+                            </header>
+                            <p>Nous pouvons nous occuper des tombes, de les fleurir pour vous.
+                            </p>
+                        </article>
 
 					</div>
 				</section>
@@ -239,6 +281,28 @@
 					</section>
 
 				</div>
+                <div class="wrapper style2">
+
+                    <article id="main" class="container special">
+                        <a href="#" class="image featured"><img src="images/reunion.jpg" alt="" /></a>
+                        <header>
+                            <h2>Vous êtes une entreprise</h2>
+<!--                            <p>-->
+<!--                                Besoin d'apporter un tailleur au pressing, de faire ressemeler une paire de chaussures,-->
+<!--                                raccourcir un pantalon, prendre rendez-vous chez le coiffeur, réceptionner une livraison,-->
+<!--                                trouver une garde d'enfant, laver sa voiture ?-->
+<!--                            </p>-->
+                        </header>
+                        <p>
+                            Nous organisons des permanences et proposons les services de la conciergerie à vos salariés
+                            directement sur le lieu de travail. Notre but est de d'offrir à vos salariés la possibilité de concilier
+                            vie professionnelle et vie personnelle, pour qu’ils soient libérés des obligations
+                            personnelles pendant la journée de travail.
+                        </p>
+                    </article>
+                </div>
+
+        </div>
 
 			<!-- Footer -->
       <?php include 'footer.html';?>
