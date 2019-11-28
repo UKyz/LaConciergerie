@@ -3052,9 +3052,7 @@ input, select, textarea {
 			}
 
 				#header .inner {
-					padding-top: 1.5em;
-					padding-left: 1em;
-					padding-right: 1em;
+					padding: 1.5em 1em;
 				}
 
 				#header header > p {
@@ -3177,8 +3175,8 @@ input, select, textarea {
 .carousel h3 {
 	color: #cc4889
 }
-#header-logo {
-	width: 300px;
+.header-logo {
+	width: 400px;
 }
 #header-phone, #header-mail {
 	font-weight: bold;
@@ -3192,6 +3190,22 @@ input, select, textarea {
 }
 #header-mail {
 	right: 10px;
+}
+
+@media screen and (max-width: 450px) {
+	body.homepage #header {
+		padding: 5.5em 0 2em 0;
+	}
+	#header .inner {
+		padding: 1.5em 1em 3em 1em;
+	}
+	.header-logo {
+		width: 100%;
+	}
+	#header-phone, #header-mail {
+		position: initial;
+		text-align: center;
+	}
 }
 
 

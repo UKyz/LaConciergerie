@@ -22,8 +22,7 @@
 					<!-- Inner -->
 						<div class="inner">
 							<header>
-								<!--<h1><a href="index.php" id="logo" class="logo-writting">La conciergerie</a></h1>-->
-                <img src="images/logo3.png" id="header-logo">
+                <img src="images/logo3.png" class="header-logo">
 								<hr />
 								<p>PRENEZ DU TEMPS POUR VOUS<br/>
                                     LA CONCIERGERIE S’OCCUPE DE TOUT</p>
