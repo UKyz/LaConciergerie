@@ -3208,6 +3208,15 @@ input, select, textarea {
 	}
 }
 
+.image.featured {
+	height: 200px;
+	overflow: hidden;
+}
+.image.featured>img {
+	height: 100%;
+	width: initial;
+}
+
 
 /****************************************
 * Services *
