@@ -121,12 +121,12 @@
                     </tr>
                     <tr>
                       <td class="card-table-head">Description</td>
-                      <td class="card-service-pres">Prestation de ménage de tout ordre selon demande
+                      <td class="card-service-pres"><p>Prestation de ménage de tout ordre selon demande
                         <br/>
                         Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere
                         accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla
                         convallis ut venenatis purus lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices
-                        tempor sagittis.</td>
+                          tempor sagittis.</p></td>
                     </tr>
                   </table>
                 </div>
@@ -144,7 +144,7 @@
                     </tr>
                     <tr>
                       <td class="card-table-head">Description</td>
-                      <td class="card-service-pres">Entretien du jardin, tonte de pelouse, arrosage...</td>
+                      <td class="card-service-pres"><p>Entretien du jardin, tonte de pelouse, arrosage...</p></td>
                     </tr>
                   </table>
                 </div>
@@ -162,7 +162,7 @@
                     </tr>
                     <tr>
                       <td class="card-table-head">Description</td>
-                      <td class="card-service-pres">Garde d'enfant à domicile, aide aux devoirs</td>
+                      <td class="card-service-pres"><p>Garde d'enfant à domicile, aide aux devoirs</p></td>
                     </tr>
                   </table>
                 </div>
@@ -180,7 +180,7 @@
                     </tr>
                     <tr>
                       <td class="card-table-head">Description</td>
-                      <td class="card-service-pres">Réparations, plomberie, menus travaux...</td>
+                      <td class="card-service-pres"><p>Réparations, plomberie, menus travaux...</p></td>
                     </tr>
                   </table>
                 </div>

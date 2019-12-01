@@ -3261,9 +3261,15 @@ input, select, textarea {
 	font-weight: bold;
 	padding-bottom: 5px;
 }
-.card-service-pres {
-	max-height: 100px;
+.card-service-pres>p {
+	height: 110px;
 	overflow: auto;
+}
+.card-service-pres>p::-webkit-scrollbar {
+	display: none;
+}
+.card-service-pres>p {
+	-ms-overflow-style: none;
 }
 
 /****************************************
