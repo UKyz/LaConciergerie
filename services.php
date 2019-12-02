@@ -81,7 +81,7 @@
         </section>
         <section>
           <div class="row">
-            <div class="col-3">
+            <div id="services-filters-select">
               <h5>Filtres :</h5>
               <div id="services-filters">
                 Type de service:
@@ -105,9 +105,9 @@
                   <option value="type4">Journée</option>
                 </select>
             </div>
-            <div class="col-9">
+            <div id="services-filters-result">
               <div class="row">
-                <div class="col-5 service-article logo-writting">
+                <div class="service-article logo-writting">
                   <h3 class="card-title">Menage</h3>
                   <img src="images/pin.png" class="card-pin" alt="">
                   <table>
@@ -130,7 +130,7 @@
                     </tr>
                   </table>
                 </div>
-                <div class="col-5 service-article logo-writting">
+                <div class="service-article logo-writting">
                   <h3 class="card-title">Jardinage</h3>
                   <img src="images/pin.png" class="card-pin" alt="">
                   <table>
@@ -148,7 +148,7 @@
                     </tr>
                   </table>
                 </div>
-                <div class="col-5 service-article logo-writting">
+                <div class="service-article logo-writting">
                   <h3 class="card-title">Garde d'enfants</h3>
                   <img src="images/pin.png" class="card-pin" alt="">
                   <table>
@@ -166,7 +166,7 @@
                     </tr>
                   </table>
                 </div>
-                <div class="col-5 service-article logo-writting">
+                <div class="service-article logo-writting">
                   <h3 class="card-title">Bricolage</h3>
                   <img src="images/pin.png" class="card-pin" alt="">
                   <table>
