@@ -3228,11 +3228,14 @@ input, select, textarea {
 /****************************************
 * Services *
 *****************************************/
-#services-filters>ul>li {
-	list-style: none;
+#services-filters-select {
+	width: 25%;
 }
-
+#services-filters-result {
+	width: 75%;
+}
 .service-article {
+	width: 45%;
 	padding: 15px;
 	margin: 15px;
 	border: thick double #cc4889;
@@ -3241,6 +3244,29 @@ input, select, textarea {
 	background-color: rgba(204, 72, 138, 0.15);
 	transform: rotate(-4deg);
 }
+
+@media screen and (max-width: 1000px) {
+	#services-filters-select {
+		width: 100%;
+	}
+
+	#services-filters-result {
+		width: 100%;
+		margin: 10px 20px;
+	}
+}
+@media screen and (max-width: 800px) {
+	.service-article {
+		width: 100%;
+		max-width: 450px;
+		margin: 10px auto;
+	}
+}
+
+#services-filters>ul>li {
+	list-style: none;
+}
+
 .card-title {
 	text-shadow: 3px 3px 5px #cc4889;
 	font-weight: bold;
@@ -3264,13 +3290,21 @@ input, select, textarea {
 .card-service-pres>p {
 	height: 110px;
 	overflow: auto;
+	padding-right: 10px;
 }
 .card-service-pres>p::-webkit-scrollbar {
-	display: none;
+	width: 10px;
 }
-.card-service-pres>p {
-	-ms-overflow-style: none;
+.card-service-pres>p::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 15px;
 }
+.card-service-pres>p::-webkit-scrollbar-thumb {
+	background-color: rgba(204, 72, 138, 0.5);
+	outline: 1px solid slategrey;
+	border-radius: 15px;
+}
+
 
 /****************************************
 * About-us *
