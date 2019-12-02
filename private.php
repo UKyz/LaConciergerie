@@ -36,23 +36,41 @@
   <!-- Main -->
   <div class="wrapper style1" id='vueapp'>
 
-    <div class="container">
-      <article id="main" class="special">
-        <header>
-          <h2><a href="#">Page privé</a></h2>
-        </header>
-        <section>
-          <header>
-            <h3>Connexion</h3>
-              <input type="text" v-model="username">
-              <input type="password" v-model="password">
-              <button v-on:click="connexion()">Connexion</button>
-          </header>
-        </section>
-      </article>
+        <div class="container">
+            <header>
+                <h2><a href="#">Page privé</a></h2>
+            </header>
+            <article id="main" class="special" v-if="!isLogged">
+                <section>
+                    <header>
+                        <h3>Connexion</h3>
+                    </header>
+                    <input type="text" v-model="username">
+                    <input type="password" v-model="password">
+                    <button v-on:click="connexion()">Connexion</button>
+                </section>
+            </article>
+
+            <article id="main" class="special" v-if="isLogged">
+                <section>
+                    <header>
+                        <h3>Services</h3>
+                    </header>
+                </section>
+            </article>
+
+            <article id="main" class="special" v-if="isLogged">
+                <section>
+                    <header>
+                        <h3>Livre d'or</h3>
+                    </header>
+                </section>
+            </article>
+        </div>
+
     </div>
 
-  </div>
+
 
   <!-- Footer -->
   <?php include 'footer.html';?>
@@ -74,24 +92,14 @@
         el: '#vueapp',
         data: {
             username: '',
-            password: ''
+            password: '',
+            isLogged: false,
         },
         mounted: function () {
         },
 
         methods: {
             connexion: () => {
-                console.log(app.username)
-                console.log(app.password)
-                let formData = new FormData();
-                formData.append('username', app.username);
-                formData.append('password', app.password);
-                const login = {};
-                formData.forEach((value, key) => {
-                    login[key] = value;
-                });
-                console.log(login)
-
                 axios({
                     method: 'post',
                     url: 'api/private.php',
@@ -102,10 +110,7 @@
                     config: { headers: {'Content-Type': 'multipart/form-data' }}
                 })
                     .then(function (response) {
-                        //handle success
-                        console.log(response)
-                        // app.contacts.push(contact)
-                        // app.resetForm();
+                        app.isLogged = (response.data.length === 1);
                     })
                     .catch(function (response) {
                         //handle error

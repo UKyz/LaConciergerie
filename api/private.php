@@ -6,7 +6,7 @@ $id = '';
 
 $method = $_SERVER['REQUEST_METHOD'];
 $request = explode('/', trim($_SERVER['PATH_INFO'],'/'));
-//$input = json_decode(file_get_contents('php://input'),true);
+$input = json_decode(file_get_contents('php://input'),true);
 
 
 if (!$con) {
@@ -20,9 +20,8 @@ switch ($method) {
 //        $sql = "select * from services".($id?" where id=$id":'');
 //        break;
     case 'POST':
-        $username = $_SERVER['username'];
-        $password = $_SERVER['password'];
-        echo $_SERVER;
+        $username = $input['username'];
+        $password = $input['password'];
 
         $sql = "select * from users where username='$username' and password='$password'";
 
