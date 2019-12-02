@@ -4,7 +4,7 @@
 
       <!-- Logo -->
       <section class="col-4 col-12-mobile">
-        <a href="#" class="image fit"><img id="footer-logo" src="images/logo.png" alt="" /></a>
+        <a href="#" class="image fit"><img id="footer-logo" src="images/logo2.png" alt="" /></a>
         <section class="contact">
           <ul class="icons">
             <li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -24,14 +24,14 @@
           <li>
             <article class="tweet row">
               <span class="col-2 icon fa-envelope"></span>
-              <span class="col-10">2 Résidence les Genets,<br/>62940 Haillicourt</span>
+              <span class="col-10">10 rue des rosati,<br/>62000 Arras</span>
             </article>
           </li>
           <li>
             <article class="tweet row">
               <span class="col-2 icon fa-clock"></span>
               <span class="col-10">
-              Du lundi au vendredi :<br/>09:00 - 12:00 et 14:00 - 18:00</span>
+              Tous les jours :<br/>7j/7 - 24h/24</span>
             </article>
           </li>
           <li>
@@ -99,13 +99,13 @@
     methods: {
       getComments: function(){
         axios.get('api/guestBook.php?limit=5&order=day')
-                .then(function (response) {
-                  console.log(response.data);
-                  appFooter.comments = response.data;
-                })
-                .catch(function (error) {
-                  console.log(error);
-                });
+          .then(function (response) {
+            console.log(response.data);
+            appFooter.comments = response.data;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
       }
     }
   })

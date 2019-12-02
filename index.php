@@ -48,13 +48,14 @@
     <header>
       <h2><strong class="logo-writting" style="margin-right: 10px; font-size: 1.2em">La Conciergerie</strong> votre allié au quotidien.</h2>
       <p>
-        Reposez-vous sur nous, on vous propose<br/>UNE PALETTE DE SERVICES SUR MESURE
+        NOTRE PALETTE DE SERVICES SUR MESURE
       </p>
+      <a href="#carousel-service" class="button scrolly" style="margin-top: 50px">Découvrir</a>
     </header>
   </section>
 
   <!-- Carousel -->
-  <section class="carousel">
+  <section class="carousel" id="carousel-service">
     <div class="reel">
 
       <article>
