@@ -63,7 +63,7 @@
               <span class="icon solid fa-star-half-alt"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Source</p>
+            <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
@@ -75,7 +75,7 @@
               <span class="icon solid fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Source</p>
+            <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
@@ -87,7 +87,7 @@
               <span class="icon solid fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Source</p>
+            <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
@@ -99,7 +99,7 @@
               <span class="icon solid fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Source</p>
+            <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <!-- End of clients opinion -->
           <div>&nbsp;</div>
