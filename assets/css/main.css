@@ -3341,6 +3341,34 @@ input, select, textarea {
 	padding: 7px 0;
 }
 
+
+/****************************************
+* Guest-book *
+*****************************************/
+.opinion {
+	width: 40%;
+	margin: 15px 5%;
+	padding: 10px;
+	float: left;
+	border: thick dashed #efd807;
+}
+.opinion-date {
+	float: left;
+}
+.opinion-rate {
+	text-align: right;
+}
+.opinion-rate>span {
+	color: #efd807;
+}
+.opinion-comment {
+	text-align: justify;
+}
+.opinion-source {
+	text-align: right;
+}
+
+
 /****************************************
 * Footer *
 *****************************************/
