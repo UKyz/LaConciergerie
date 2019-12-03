@@ -24,19 +24,24 @@
       <header>
         <img src="images/logo3.png" class="header-logo">
         <hr />
-        <p>PRENEZ DU TEMPS POUR VOUS<br/>
+        <p class="header-text-background">PRENEZ DU TEMPS POUR VOUS<br/>
           LA CONCIERGERIE S’OCCUPE DE TOUT</p>
       </header>
       <footer>
         <a href="#banner" class="button circled scrolly">Découvrir</a>
       </footer>
     </div>
+    <div class="">
+    <p id="header-facebook">
+      <a href="https://www.facebook.com/Conciergerie-des-rosati-107342737410632/"><span class="icon brands fa-facebook-square"></span></a>
+    </p>
     <p id="header-phone">
-      <span class="icon solid fa-phone-alt"> : 06 16 56 43 50</span>
+      <span class="icon solid fa-phone-alt">06 16 56 43 50</span>
     </p>
     <p id="header-mail">
-      <span class="icon solid fa-mail-bulk"> : laconciergerie@gmail.com</span>
+      <span class="icon solid fa-mail-bulk">laconciergerie@gmail.com</span>
     </p>
+    </div>
 
     <!-- Nav -->
     <?php include 'nav.html';?>
