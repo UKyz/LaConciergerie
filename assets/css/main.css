@@ -3181,6 +3181,11 @@ input, select, textarea {
 .header-logo {
 	width: 400px;
 }
+#header-text {
+	padding: 10px;
+	margin: 20px !important;
+	border-radius: 15px;
+}
 #header-facebook, #header-phone, #header-mail {
 	width: 33%;
 	font-weight: bold;

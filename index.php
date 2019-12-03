@@ -24,7 +24,7 @@
       <header>
         <img src="images/logo3.png" class="header-logo">
         <hr />
-        <p class="header-text-background">PRENEZ DU TEMPS POUR VOUS<br/>
+        <p class="header-text-background" id="header-text">PRENEZ DU TEMPS POUR VOUS<br/>
           LA CONCIERGERIE S’OCCUPE DE TOUT</p>
       </header>
       <footer>
