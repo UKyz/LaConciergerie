@@ -62,7 +62,14 @@
               <span class="icon solid fa-star"></span>
               <span class="icon solid fa-star-half-alt"></span>
             </p>
-            <p class="opinion-comment">Voilà le joli commentaire</p>
+            <p class="opinion-comment">
+              Voilà le joli commentaire
+              <br/>
+              Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere
+              accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla
+              convallis ut venenatis purus lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices
+              tempor sagittis.
+            </p>
             <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <div class="opinion">
@@ -84,14 +91,14 @@
               <span class="icon solid fa-star"></span>
               <span class="icon solid fa-star"></span>
               <span class="icon solid fa-star"></span>
-              <span class="icon solid fa-star"></span>
+              <span class="icon far fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
             <p class="opinion-source">Nom<br/>Source</p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
-            <p class="opinion-rate">
+            <p class="opinion-rate no-rate">
               <span class="icon solid fa-star"></span>
               <span class="icon solid fa-star"></span>
               <span class="icon solid fa-star"></span>
