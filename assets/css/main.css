@@ -3360,6 +3360,8 @@ input, select, textarea {
 }
 .opinion-date {
 	float: left;
+	font-size: medium;
+	color: #cc4889;
 }
 .opinion-rate {
 	text-align: right;
@@ -3372,11 +3374,10 @@ input, select, textarea {
 }
 .opinion-comment {
 	text-align: justify;
-}
-.opinion-comment {
 	height: 70px;
 	overflow: auto;
 	padding-right: 10px;
+	font-family: 'Courgette', cursive;
 }
 .opinion-comment::-webkit-scrollbar {
 	width: 10px;
@@ -3392,6 +3393,8 @@ input, select, textarea {
 }
 .opinion-source {
 	text-align: right;
+	color: #efd807;
+	font-weight: bold;
 }
 
 @media screen and (max-width: 900px) {
