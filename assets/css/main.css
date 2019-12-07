@@ -3333,6 +3333,7 @@ input, select, textarea {
 	background-color: rgba(204, 72, 138, 0.5);
 	outline: 1px solid slategrey;
 	border-radius: 15px;
+	border: 0;
 }
 
 
