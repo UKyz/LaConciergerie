@@ -102,7 +102,6 @@
       getComments: function(){
         axios.get('api/guestBook.php?limit=5&order=day')
           .then(function (response) {
-            console.log(response.data);
             appFooter.comments = response.data;
           })
           .catch(function (error) {
