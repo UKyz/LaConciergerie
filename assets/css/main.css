@@ -3423,3 +3423,9 @@ input, select, textarea {
 ul.divided {
 	width: fit-content;
 }
+
+.onButtonClicked {
+	background: white;
+	color: #cc4889;
+	border: #cc4889 solid 2px;
+}

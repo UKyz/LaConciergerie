@@ -1,7 +1,7 @@
 <?php
 
 return function () {
-  error_reporting(E_ERROR | E_PARSE);
+//  error_reporting(E_ERROR | E_PARSE);
 
   // Victor configuration
   $host = "localhost";
