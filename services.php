@@ -29,7 +29,7 @@
     </div>
 
     <!-- Nav -->
-    <?php include 'nav.html';?>
+		<?php include 'nav.html';?>
 
   </div>
 
@@ -97,90 +97,31 @@
                   </div>
                 </form>
               </div>
-                <select name="type">
-                  <option value="type1">Variable</option>
-                  <option value="type1">1h</option>
-                  <option value="type2">2h</option>
-                  <option value="type3">Demi-journée</option>
-                  <option value="type4">Journée</option>
-                </select>
+              <select name="type">
+                <option value="type1">Variable</option>
+                <option value="type1">1h</option>
+                <option value="type2">2h</option>
+                <option value="type3">Demi-journée</option>
+                <option value="type4">Journée</option>
+              </select>
             </div>
             <div id="services-filters-result">
               <div class="row">
-                <div class="service-article logo-writting">
-                  <h3 class="card-title">Menage</h3>
+                <div class="service-article logo-writting" v-for="service in services">
+                  <h3 class="card-title">{{service.name}}</h3>
                   <img src="images/pin.png" class="card-pin" alt="">
                   <table>
                     <tr>
                       <td class="card-table-head">Tarif</td>
-                      <td>20€</td>
+                      <td>{{service.price}}</td>
                     </tr>
                     <tr>
                       <td class="card-table-head">Durée</td>
-                      <td>1h</td>
+                      <td>{{service.duration}}</td>
                     </tr>
                     <tr>
                       <td class="card-table-head">Description</td>
-                      <td class="card-service-pres"><p>Prestation de ménage de tout ordre selon demande
-                        <br/>
-                        Commodo id natoque malesuada sollicitudin elit suscipit. Curae suspendisse mauris posuere
-                        accumsan massa posuere lacus convallis tellus interdum. Amet nullam fringilla nibh nulla
-                        convallis ut venenatis purus lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices
-                          tempor sagittis.</p></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="service-article logo-writting">
-                  <h3 class="card-title">Jardinage</h3>
-                  <img src="images/pin.png" class="card-pin" alt="">
-                  <table>
-                    <tr>
-                      <td class="card-table-head">Tarif</td>
-                      <td>35€</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Durée</td>
-                      <td>1h30</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Description</td>
-                      <td class="card-service-pres"><p>Entretien du jardin, tonte de pelouse, arrosage...</p></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="service-article logo-writting">
-                  <h3 class="card-title">Garde d'enfants</h3>
-                  <img src="images/pin.png" class="card-pin" alt="">
-                  <table>
-                    <tr>
-                      <td class="card-table-head">Tarif</td>
-                      <td>25€</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Durée</td>
-                      <td>1h</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Description</td>
-                      <td class="card-service-pres"><p>Garde d'enfant à domicile, aide aux devoirs</p></td>
-                    </tr>
-                  </table>
-                </div>
-                <div class="service-article logo-writting">
-                  <h3 class="card-title">Bricolage</h3>
-                  <img src="images/pin.png" class="card-pin" alt="">
-                  <table>
-                    <tr>
-                      <td class="card-table-head">Tarif</td>
-                      <td>15€</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Durée</td>
-                      <td>45min</td>
-                    </tr>
-                    <tr>
-                      <td class="card-table-head">Description</td>
-                      <td class="card-service-pres"><p>Réparations, plomberie, menus travaux...</p></td>
+                      <td class="card-service-pres"><p>{{service.description}}</p></td>
                     </tr>
                   </table>
                 </div>
@@ -190,45 +131,12 @@
 
         </section>
       </article>
-      <!--						<hr />-->
-      <!--						<div class="row">-->
-      <!--							<article class="col-4 col-12-mobile special">-->
-      <!--								<a href="#" class="image featured"><img src="images/pic07.jpg" alt="" /></a>-->
-      <!--								<header>-->
-      <!--									<h3><a href="#">Gravida aliquam penatibus</a></h3>-->
-      <!--								</header>-->
-      <!--								<p>-->
-      <!--									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam-->
-      <!--									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.-->
-      <!--								</p>-->
-      <!--							</article>-->
-      <!--							<article class="col-4 col-12-mobile special">-->
-      <!--								<a href="#" class="image featured"><img src="images/pic08.jpg" alt="" /></a>-->
-      <!--								<header>-->
-      <!--									<h3><a href="#">Sed quis rhoncus placerat</a></h3>-->
-      <!--								</header>-->
-      <!--								<p>-->
-      <!--									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam-->
-      <!--									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.-->
-      <!--								</p>-->
-      <!--							</article>-->
-      <!--							<article class="col-4 col-12-mobile special">-->
-      <!--								<a href="#" class="image featured"><img src="images/pic09.jpg" alt="" /></a>-->
-      <!--								<header>-->
-      <!--									<h3><a href="#">Magna laoreet et aliquam</a></h3>-->
-      <!--								</header>-->
-      <!--								<p>-->
-      <!--									Amet nullam fringilla nibh nulla convallis tique ante proin sociis accumsan lobortis. Auctor etiam-->
-      <!--									porttitor phasellus tempus cubilia ultrices tempor sagittis. Nisl fermentum consequat integer interdum.-->
-      <!--								</p>-->
-      <!--							</article>-->
-      <!--						</div>-->
     </div>
 
   </div>
 
   <!-- Footer -->
-  <?php include 'footer.html';?>
+	<?php include 'footer.html';?>
 
 </div>
 
@@ -243,72 +151,27 @@
 <script src="assets/js/main.js"></script>
 
 <script>
-    const app = new Vue({
-        el: '#vueapp',
-        data: {
-            service: '',
-            description: '',
-            tarif: '',
-            duree: '',
-            services: []
-        },
-        mounted: function () {
-            this.getServices()
-        },
-
-        methods: {
-            getServices: function(){
-                axios.get('api/services.php')
-                    .then(function (response) {
-                        console.log(response.data);
-                        app.services = response.data;
-                    })
-                    .catch(function (error) {
-                        console.log(error);
-                    });
-            },
-            createContact: function(){
-                console.log("Create contact!")
-
-                let formData = new FormData();
-                console.log("name:", this.name)
-                formData.append('name', this.name)
-                formData.append('email', this.email)
-                formData.append('city', this.city)
-                formData.append('country', this.country)
-                formData.append('job', this.job)
-
-                var contact = {};
-                formData.forEach(function(value, key){
-                    contact[key] = value;
-                });
-
-                axios({
-                    method: 'post',
-                    url: 'api/contacts.php',
-                    data: formData,
-                    config: { headers: {'Content-Type': 'multipart/form-data' }}
-                })
-                    .then(function (response) {
-                        //handle success
-                        console.log(response)
-                        app.contacts.push(contact)
-                        app.resetForm();
-                    })
-                    .catch(function (response) {
-                        //handle error
-                        console.log(response)
-                    });
-            },
-            resetForm: function(){
-                this.name = '';
-                this.email = '';
-                this.country = '';
-                this.city = '';
-                this.job = '';
-            }
-        }
-    })
+  const app = new Vue({
+    el: '#vueapp',
+    data: {
+      services: []
+    },
+    methods: {
+      getServices: function(){
+        axios.get('api/services.php')
+          .then(function (response) {
+            console.log(response.data);
+            app.services = response.data;
+          })
+          .catch(function (error) {
+            console.log(error);
+          });
+      },
+    },
+    mounted: function () {
+      this.getServices()
+    },
+  })
 </script>
 
 </body>
