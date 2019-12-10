@@ -10,7 +10,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Courgette|Lobster+Two|Marck+Script|Pacifico|Permanent+Marker|Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Courgette|Solway|Handlee|Cinzel&display=swap" rel="stylesheet">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -70,7 +70,7 @@
               convallis ut venenatis purus lobortis. Auctor etiam porttitor phasellus tempus cubilia ultrices
               tempor sagittis.
             </p>
-            <p class="opinion-source">Nom<br/>Source</p>
+            <p class="opinion-source">Nom<br/><span>Source</span></p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
@@ -82,7 +82,7 @@
               <span class="icon solid fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Nom<br/>Source</p>
+            <p class="opinion-source">Nom<br/><span>Source</span></p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
@@ -94,15 +94,19 @@
               <span class="icon far fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Nom<br/>Source</p>
+            <p class="opinion-source">Nom<br/><span>Source</span></p>
           </div>
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
             <p class="opinion-rate no-rate">
-              <span>Non noté</span>
+              <span class="icon far fa-star"></span>
+              <span class="icon far fa-star"></span>
+              <span class="icon far fa-star"></span>
+              <span class="icon far fa-star"></span>
+              <span class="icon far fa-star"></span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
-            <p class="opinion-source">Nom<br/>Source</p>
+            <p class="opinion-source">Nom<br/><span>Source</span></p>
           </div>
           <!-- End of clients opinion -->
           <div>&nbsp;</div>
