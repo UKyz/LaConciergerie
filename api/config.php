@@ -1,7 +1,8 @@
 <?php
 
 return function () {
-//  error_reporting(E_ERROR | E_PARSE);
+  // NE PAS ENLEVER POUR L'ORDI D'ALEXIA
+  error_reporting(E_ERROR | E_PARSE);
 
   // Victor configuration
   $host = "localhost";
