@@ -1950,6 +1950,7 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	form input[type="date"],
 	form select,
 	form textarea {
 		-webkit-appearance: none;
@@ -1969,6 +1970,7 @@ input, select, textarea {
 		form input[type="text"]:focus,
 		form input[type="email"]:focus,
 		form input[type="password"]:focus,
+		form input[type="date"]:focus,
 		form select:focus,
 		form textarea:focus {
 			background: #fff;
@@ -1978,6 +1980,7 @@ input, select, textarea {
 	form input[type="text"],
 	form input[type="email"],
 	form input[type="password"],
+	form input[type="date"],
 	form select {
 		line-height: 1em;
 	}
@@ -3417,6 +3420,72 @@ input, select, textarea {
 
 
 /****************************************
+* Private page *
+*****************************************/
+#private-button-left, #private-button-right {
+	width: 50%;
+}
+#private-button-left {
+	float: left;
+}
+.onButtonClicked {
+	background: #eeeeee;
+	color: #cc4889;
+	border: 2px solid #cc4889;
+	border-bottom: 0px;
+	border-radius: 10px 10px 0 0;
+}
+
+.private-data {
+	background-color: #eeeeee;
+	padding: 10px;
+}
+.private-data>h3 {
+	color: #cc4889;
+	text-align: center;
+	font-size: x-large;
+	font-weight: bold;
+	font-family: 'Courgette', cursive;
+	margin: 10px 0;
+}
+.private-data label {
+	margin: 0;
+	font-size: large;
+	font-family: 'Handlee', cursive;
+}
+
+.private-separator {
+	margin-bottom: 6em;
+}
+
+.private-data-card {
+	width: 33%;
+	float: left;
+	font-family: 'Handlee', cursive;
+}
+.private-data-card>div {
+	padding: 10px;
+	border: 1px dotted #cc4889;
+	border-radius: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+	.private-data-card {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 700px) {
+	.private-data-card {
+		width: 100%;
+	}
+	.private-data button, .private-data input[type="button"] {
+		width: auto;
+		padding: 0 2em;
+	}
+}
+
+
+/****************************************
 * Footer *
 *****************************************/
 #footer-logo {
@@ -3433,10 +3502,4 @@ input, select, textarea {
 
 ul.divided {
 	width: fit-content;
-}
-
-.onButtonClicked {
-	background: white;
-	color: #cc4889;
-	border: #cc4889 solid 2px;
 }
