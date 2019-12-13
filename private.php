@@ -10,7 +10,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Courgette|Solway|Handlee|Cinzel&display=swap" rel="stylesheet">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -51,75 +51,99 @@
         </section>
       </article>
 
-      <button v-if="isLogged" v-on:click="page = 'services'" v-bind:class="{'onButtonClicked' : (page === 'services')}">Services</button>
-      <button v-if="isLogged" v-on:click="page = 'guestbook'" v-bind:class="{'onButtonClicked' : (page === 'guestbook')}">Livre d'or</button>
+      <button id="private-button-left" v-if="isLogged" v-on:click="page = 'services'" v-bind:class="{'onButtonClicked' : (page === 'services')}">Services</button>
+      <button id="private-button-right" v-if="isLogged" v-on:click="page = 'guestbook'" v-bind:class="{'onButtonClicked' : (page === 'guestbook')}">Livre d'or</button>
 
-      <article id="main" class="special" v-if="isLogged" v-show="page === 'services'">
+      <article id="main" class="special private-data" v-if="isLogged" v-show="page === 'services'">
+        <h3>Ajouter un service</h3>
         <section>
-          <header>
-            <h3>Services</h3>
-          </header>
-          <h2>Mes services</h2>
-          <div v-for="service in services">
+          <div>
+            <form class="row">
+              <div class="col-4">
+                <label>Nom</label>
+                <input type="text" v-model="service.name">
+              </div>
+              <div class="col-4">
+                <label>Durée</label>
+                <input type="text" v-model="service.duration">
+              </div>
+              <div class="col-4">
+                <label>Prix</label>
+                <input type="text" v-model="service.price">
+              </div>
+              <div class="col-12">
+                <label>Description</label>
+                <textarea v-model="service.description"></textarea>
+              </div>
+              <div class="col-12">
+                <label>Mots-clés</label>
+                <input type="text" v-model="service.tags">
+              </div>
+              <div class="col-12">
+                <input type="button" value="Valider" v-on:click="addService(service)">
+              </div>
+            </form>
+          </div>
+        </section>
+        <hr class="private-separator">
+        <h3>Services déjà enregistrés</h3>
+        <section>
+          <div class="row">
+          <div v-for="service in services" class="private-data-card">
             <div>
               <p>{{service.name}}</p>
               <p>{{service.description}}</p>
               <button v-on:click="deleteService(service.id)">Supprimer</button>
             </div>
           </div>
-
-          <div>
-            <form>
-              <h2>Ajouter un service</h2>
-              <div>
-                Nom
-                <input type="text" v-model="service.name">
-                Description
-                <input type="email" v-model="service.description">
-                Durée
-                <input type="text" v-model="service.duration">
-                Prix
-                <input type="text" v-model="service.price">
-                Mots-clés
-                <input type="text" v-model="service.tags">
-                <input type="button" value="Valider" v-on:click="addService(service)">
-              </div>
-            </form>
           </div>
         </section>
       </article>
 
-      <article id="main" class="special" v-if="isLogged" v-show="page === 'guestbook'">
+      <article id="main" class="special private-data" v-if="isLogged" v-show="page === 'guestbook'">
+        <h3>Ajouter un commentaire</h3>
         <section>
-          <header>
-            <h3>Livre d'or</h3>
-          </header>
-          <h2>Mes commentaires</h2>
-          <div v-for="comment in comments">
+          <div>
+            <form class="row">
+              <form class="row">
+                <div class="col-4">
+                  <label>Nom</label>
+                  <input type="text" v-model="comment.name">
+                </div>
+                <div class="col-4">
+                  <label>Origine</label>
+                  <input type="text" v-model="comment.origin">
+                </div>
+                <div class="col-4">
+                  <label>Jour</label>
+                  <input type="date" v-model="comment.day">
+                </div>
+                <div class="col-12">
+                  <label>Mail</label>
+                  <input type="email" v-model="comment.mail">
+                </div>
+                <div class="col-12">
+                  <label>Commentaire</label>
+                  <textarea v-model="comment.comment"></textarea>
+                </div>
+                <div class="col-12">
+                  <input type="button" value="Valider" v-on:click="addComment(comment)">
+                </div>
+              </form>
+            </form>
+          </div>
+        </section>
+        <hr class="private-separator">
+        <h3>Commentaires déjà enregistrés</h3>
+        <section>
+          <div class="row">
+          <div v-for="comment in comments" class="private-data-card">
             <div>
               <p>{{comment.name}} ({{comment.email}})</p>
               <p>{{comment.comment}}</p>
-              <button v-on:click="deleteComment(comment.id)">delete</button>
+              <button v-on:click="deleteComment(comment.id)">Supprimer</button>
             </div>
           </div>
-
-          <div>
-            <form>
-              <h2>Ajouter un commentaire</h2>
-              <div>
-                Nom
-                <input type="text" v-model="comment.name">
-                Mail
-                <input type="email" v-model="comment.mail">
-                Commentaire
-                <input type="text" v-model="comment.comment">
-                Jour
-                <input type="date" v-model="comment.day">
-                Origine
-                <input type="text" v-model="comment.origin">
-                <input type="button" value="Valider" v-on:click="addComment(comment)">
-              </div>
-            </form>
           </div>
         </section>
       </article>
