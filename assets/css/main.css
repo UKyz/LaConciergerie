@@ -1959,8 +1959,9 @@ input, select, textarea {
 		background: #fafafa;
 		width: 100%;
 		border-radius: 0.5em;
-		border: solid 1px #E5E5E5;
-		padding: 1em;
+		border: solid 1px #dddddd;
+		box-shadow: 3px 3px 10px #dddddd;
+		padding: .7em;
 		-moz-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 		-webkit-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 		-ms-transition: background-color 0.35s ease-in-out, border-color 0.35s ease-in-out;
@@ -1990,19 +1991,19 @@ input, select, textarea {
 	}
 
 	form ::-webkit-input-placeholder {
-		color: #555 !important;
+		color: #cccccc !important;
 	}
 
 	form :-moz-placeholder {
-		color: #555 !important;
+		color: #cccccc !important;
 	}
 
 	form ::-moz-placeholder {
-		color: #555 !important;
+		color: #cccccc !important;
 	}
 
 	form :-ms-input-placeholder {
-		color: #555 !important;
+		color: #cccccc !important;
 	}
 
 	form ::-moz-focus-inner {
@@ -3422,8 +3423,28 @@ input, select, textarea {
 /****************************************
 * Private page *
 *****************************************/
+#connect-section input {
+	width: 40%;
+	display: block;
+	background: #fafafa;
+	border-radius: 0.5em;
+	border: solid 1px #dddddd;
+	box-shadow: 3px 3px 10px #dddddd;
+	padding: .7em;
+}
+@media screen and (max-width: 736px) {
+	#connect-section input {
+		width: 100%;
+	}
+}
+
 #private-button-left, #private-button-right {
 	width: 50%;
+	padding: 1em;
+}
+#private-button-left:hover, #private-button-right:hover {
+	color: #fff;
+	background: rgba(204, 72, 138, 0.50);
 }
 #private-button-left {
 	float: left;
@@ -3435,10 +3456,23 @@ input, select, textarea {
 	border-bottom: 0px;
 	border-radius: 10px 10px 0 0;
 }
+.onButtonClicked:hover {
+	background: #eeeeee !important;
+	color: #cc4889 !important;
+}
 
 .private-data {
 	background-color: #eeeeee;
-	padding: 10px;
+	border: 1px solid #dddddd;
+	border-top: 0;
+	box-shadow: 3px 3px 10px 7px #dddddd;
+	padding: 20px;
+}
+.private-data-form {
+	margin-top: 30px;
+}
+.private-data-form>div>form>div {
+	padding: 20px 0 0 36px;
 }
 .private-data>h3 {
 	color: #cc4889;
@@ -3451,7 +3485,7 @@ input, select, textarea {
 .private-data label {
 	margin: 0;
 	font-size: large;
-	font-family: 'Handlee', cursive;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .private-separator {
@@ -3461,7 +3495,7 @@ input, select, textarea {
 .private-data-card {
 	width: 33%;
 	float: left;
-	font-family: 'Handlee', cursive;
+	font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 .private-data-card>div {
 	padding: 10px;

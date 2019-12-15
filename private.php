@@ -10,7 +10,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
   <link rel="stylesheet" href="assets/css/main.css" />
-  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Courgette|Solway|Handlee|Cinzel&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Satisfy|Courgette|Solway|Handlee|Cinzel|Yanone+Kaffeesatz&display=swap" rel="stylesheet">
   <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
@@ -38,15 +38,17 @@
 
     <div class="container">
       <header>
-        <h2><a href="#">Page privé</a></h2>
+        <h2>Page privé</h2>
       </header>
       <article id="main" class="special" v-if="!isLogged">
-        <section>
+        <section id="connect-section">
           <header>
             <h3>Connexion</h3>
           </header>
-          <input type="text" v-model="username">
-          <input type="password" v-model="password">
+          <input type="text" v-model="username" placeholder="nom">
+          <br/>
+          <input type="password" v-model="password" placeholder="mot de passe">
+          <br/>
           <button v-on:click="connexion()" id="connexion">Connexion</button>
         </section>
       </article>
@@ -55,29 +57,67 @@
       <button id="private-button-right" v-if="isLogged" v-on:click="page = 'guestbook'" v-bind:class="{'onButtonClicked' : (page === 'guestbook')}">Livre d'or</button>
 
       <article id="main" class="special private-data" v-if="isLogged" v-show="page === 'services'">
-        <h3>Ajouter un service</h3>
+        <h3>Services déjà enregistrés</h3>
         <section>
+          <div class="row">
+            <div v-for="service in services" class="private-data-card">
+              <div>
+                <p>{{service.name}}</p>
+                <p>{{service.description}}</p>
+                <button v-on:click="deleteService(service.id)">Supprimer</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="private-separator">
+        <h3>Ajouter un service</h3>
+        <section class="private-data-form">
           <div>
-            <form class="row">
+            <form class="row ">
               <div class="col-4">
                 <label>Nom</label>
-                <input type="text" v-model="service.name">
+                <input type="text" v-model="service.name" placeholder="Martial">
               </div>
               <div class="col-4">
                 <label>Durée</label>
-                <input type="text" v-model="service.duration">
+                <select>
+                  <option>-- Sélectionner --</option>
+                  <option>15 min</option>
+                  <option>30 min</option>
+                  <option>1h</option>
+                  <option>1h30</option>
+                  <option>2h</option>
+                  <option>autre</option>
+                </select>
               </div>
               <div class="col-4">
+                <label>&nbsp;</label>
+                <input type="text" v-model="service.duration" placeholder="1h30">
+              </div>
+              <div class="col-4"></div>
+              <div class="col-4">
                 <label>Prix</label>
-                <input type="text" v-model="service.price">
+                <select>
+                  <option>-- Sélectionner --</option>
+                  <option>10€</option>
+                  <option>15€</option>
+                  <option>20€</option>
+                  <option>25€</option>
+                  <option>50€</option>
+                  <option>autre</option>
+                </select>
+              </div>
+              <div class="col-4">
+                <label>&nbsp;</label>
+                <input type="text" v-model="service.price" placeholder="25€">
               </div>
               <div class="col-12">
                 <label>Description</label>
-                <textarea v-model="service.description"></textarea>
+                <textarea v-model="service.description" placeholder="Ce service va vous simplifier la vie grace à etc..."></textarea>
               </div>
               <div class="col-12">
                 <label>Mots-clés</label>
-                <input type="text" v-model="service.tags">
+                <input type="text" v-model="service.tags" placeholder="bricolage, peinture, ménage">
               </div>
               <div class="col-12">
                 <input type="button" value="Valider" v-on:click="addService(service)">
@@ -85,34 +125,33 @@
             </form>
           </div>
         </section>
-        <hr class="private-separator">
-        <h3>Services déjà enregistrés</h3>
-        <section>
-          <div class="row">
-          <div v-for="service in services" class="private-data-card">
-            <div>
-              <p>{{service.name}}</p>
-              <p>{{service.description}}</p>
-              <button v-on:click="deleteService(service.id)">Supprimer</button>
-            </div>
-          </div>
-          </div>
-        </section>
       </article>
 
       <article id="main" class="special private-data" v-if="isLogged" v-show="page === 'guestbook'">
-        <h3>Ajouter un commentaire</h3>
+        <h3>Commentaires déjà enregistrés</h3>
         <section>
+          <div class="row">
+            <div v-for="comment in comments" class="private-data-card">
+              <div>
+                <p>{{comment.name}} ({{comment.email}})</p>
+                <p>{{comment.comment}}</p>
+                <button v-on:click="deleteComment(comment.id)">Supprimer</button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <hr class="private-separator">
+        <h3>Ajouter un commentaire</h3>
+        <section class="private-data-form">
           <div>
-            <form class="row">
               <form class="row">
                 <div class="col-4">
                   <label>Nom</label>
-                  <input type="text" v-model="comment.name">
+                  <input type="text" v-model="comment.name" placeholder="Martial">
                 </div>
                 <div class="col-4">
                   <label>Origine</label>
-                  <input type="text" v-model="comment.origin">
+                  <input type="text" v-model="comment.origin" placeholder="Facebook">
                 </div>
                 <div class="col-4">
                   <label>Jour</label>
@@ -120,30 +159,16 @@
                 </div>
                 <div class="col-12">
                   <label>Mail</label>
-                  <input type="email" v-model="comment.mail">
+                  <input type="email" v-model="comment.mail" placeholder="mail@mail.fr">
                 </div>
                 <div class="col-12">
                   <label>Commentaire</label>
-                  <textarea v-model="comment.comment"></textarea>
+                  <textarea v-model="comment.comment" placeholder="Très satisfait par les services de La Conciergerie !"></textarea>
                 </div>
                 <div class="col-12">
                   <input type="button" value="Valider" v-on:click="addComment(comment)">
                 </div>
-              </form>
             </form>
-          </div>
-        </section>
-        <hr class="private-separator">
-        <h3>Commentaires déjà enregistrés</h3>
-        <section>
-          <div class="row">
-          <div v-for="comment in comments" class="private-data-card">
-            <div>
-              <p>{{comment.name}} ({{comment.email}})</p>
-              <p>{{comment.comment}}</p>
-              <button v-on:click="deleteComment(comment.id)">Supprimer</button>
-            </div>
-          </div>
           </div>
         </section>
       </article>
