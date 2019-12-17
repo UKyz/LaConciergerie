@@ -3537,3 +3537,13 @@ input, select, textarea {
 ul.divided {
 	width: fit-content;
 }
+
+@media screen and (max-width: 736px) {
+	#footer-logo {
+		max-width: 400px;
+		margin: auto;
+	}
+	.divided {
+		margin: auto;
+	}
+}
