@@ -29,7 +29,7 @@
     </div>
 
     <!-- Nav -->
-		<?php include 'nav.html';?>
+    <?php include 'nav.html';?>
 
   </div>
 
@@ -70,40 +70,38 @@
             ut penatibus fermentum nibh erat malesuada varius.
           </p>
         </section>
-        <section>
+        <section id="services-search">
           <header>
             <h3>Notre annuaire</h3>
           </header>
-          <p>
-            Rechercher un service :
-            <input type="text" placeholder="Peinture, Promener les chiens, Garde d'enfant ..."/>
-          </p>
+          <p>Affinez votre recherche :</p>
+          <input type="text" placeholder="Peinture, Promener les chiens, Garde d'enfant ..."/>
         </section>
         <section>
           <div class="row">
             <div id="services-filters-select">
-              <h5>Filtres :</h5>
               <div id="services-filters">
-                Type de service:
-                <form>
-                  <div class="checkbox">
+                <p>Type de service :</p>
+                <ul>
+                  <li>
                     <input type="checkbox" name="type" id="type"><label for="type">Option 1</label>
-                  </div>
-                  <div class="checkbox">
-                    <label><input type="checkbox" value="">Option 2</label>
-                  </div>
-                  <div class="checkbox disabled">
-                    <label><input type="checkbox" value="" disabled>Option 3</label>
-                  </div>
-                </form>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="type" id="type"><label for="type">Option 2</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="type" id="type"><label for="type">Option 3</label>
+                  </li>
+                </ul>
+                <p>Durée :</p>
+                <select name="type">
+                  <option value="type1">-- Sélectionner --</option>
+                  <option value="type1">1h</option>
+                  <option value="type2">2h</option>
+                  <option value="type3">Demi-journée</option>
+                  <option value="type4">Journée</option>
+                </select>
               </div>
-              <select name="type">
-                <option value="type1">Variable</option>
-                <option value="type1">1h</option>
-                <option value="type2">2h</option>
-                <option value="type3">Demi-journée</option>
-                <option value="type4">Journée</option>
-              </select>
             </div>
             <div id="services-filters-result">
               <div class="row">
@@ -136,7 +134,7 @@
   </div>
 
   <!-- Footer -->
-	<?php include 'footer.html';?>
+  <?php include 'footer.html';?>
 
 </div>
 
@@ -151,27 +149,27 @@
 <script src="assets/js/main.js"></script>
 
 <script>
-  const app = new Vue({
-    el: '#vueapp',
-    data: {
-      services: []
-    },
-    methods: {
-      getServices: function(){
-        axios.get('api/services.php')
-          .then(function (response) {
-            console.log(response.data);
-            app.services = response.data;
-          })
-          .catch(function (error) {
-            console.log(error);
-          });
-      },
-    },
-    mounted: function () {
-      this.getServices()
-    },
-  })
+    const app = new Vue({
+        el: '#vueapp',
+        data: {
+            services: []
+        },
+        methods: {
+            getServices: function(){
+                axios.get('api/services.php')
+                    .then(function (response) {
+                        console.log(response.data);
+                        app.services = response.data;
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+            },
+        },
+        mounted: function () {
+            this.getServices()
+        },
+    })
 </script>
 
 </body>

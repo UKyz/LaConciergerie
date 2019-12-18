@@ -3262,9 +3262,30 @@ input, select, textarea {
 /****************************************
 * Services *
 *****************************************/
+#services-search p, #services-filters-select p {
+	padding: .7em;
+	margin: 0;
+}
+#services-search p {
+	float: left;
+}
+#services-search input, #services-filters-select select {
+	width: 300px;
+	display: block;
+	background: #fafafa;
+	border-radius: 0.5em;
+	border: solid 1px #dddddd;
+	box-shadow: 3px 3px 10px #dddddd;
+	padding: .7em;
+}
+
 #services-filters-select {
 	width: 25%;
 }
+#services-filters-select select {
+	width: auto;
+}
+
 #services-filters-result {
 	width: 75%;
 }
