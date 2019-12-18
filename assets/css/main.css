@@ -3397,7 +3397,7 @@ input, select, textarea {
 }
 .no-rate>span {
 	color: #b5b5b5;
-	font-size: x-small;
+	font-size: small;
 }
 .opinion-comment {
 	color: #686868;
@@ -3418,15 +3418,12 @@ input, select, textarea {
 	background-color: rgba(239, 216, 7, 0.7);
 	outline: 1px solid slategrey;
 	border-radius: 15px;
+	border: 0;
 }
 .opinion-source {
-	font-family: 'Handlee', cursive;
 	text-align: right;
 	color: #efd807;
 	font-weight: bold;
-}
-.opinion-source>span {
-	font-family: 'Cinzel', serif;
 }
 
 @media screen and (max-width: 900px) {
