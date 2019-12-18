@@ -99,11 +99,7 @@
           <div class="opinion">
             <p class="opinion-date">03/12/2019</p>
             <p class="opinion-rate no-rate">
-              <span class="icon far fa-star"></span>
-              <span class="icon far fa-star"></span>
-              <span class="icon far fa-star"></span>
-              <span class="icon far fa-star"></span>
-              <span class="icon far fa-star"></span>
+              <span>Non noté</span>
             </p>
             <p class="opinion-comment">Voilà le joli commentaire</p>
             <p class="opinion-source">Nom<br/><span>Source</span></p>
