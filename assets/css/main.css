@@ -3441,8 +3441,13 @@ input, select, textarea {
 /****************************************
 * Private page *
 *****************************************/
+#connect-section {
+	text-align: center;
+}
+
 #connect-section input {
-	width: 40%;
+	text-align: centerr;
+	margin: auto;
 	display: block;
 	background: #fafafa;
 	border-radius: 0.5em;
@@ -3455,23 +3460,29 @@ input, select, textarea {
 		width: 100%;
 	}
 }
+#connexion {
+	font-size: medium;
+}
 
 #private-button-left, #private-button-right {
 	width: 50%;
 	padding: 1em;
+	background-color: rgba(204, 72, 138, 0.70);
+	border-radius: 10px 10px 0 0;
+	border-bottom: 2px solid rgba(204, 72, 138, 0.70);
 }
 #private-button-left:hover, #private-button-right:hover {
 	color: #fff;
-	background: rgba(204, 72, 138, 0.50);
+	background: rgba(204, 72, 138, 0.45);
 }
 #private-button-left {
 	float: left;
 }
 .onButtonClicked {
-	background: #eeeeee;
+	background: #eeeeee !important;
 	color: #cc4889;
 	border: 2px solid #cc4889;
-	border-bottom: 0px;
+	border-bottom: 0 !important;
 	border-radius: 10px 10px 0 0;
 }
 .onButtonClicked:hover {
@@ -3513,12 +3524,19 @@ input, select, textarea {
 .private-data-card {
 	width: 33%;
 	float: left;
-	font-family: 'Yanone Kaffeesatz', sans-serif;
+	font-family: 'Patua+One', cursive;
 }
 .private-data-card>div {
 	padding: 10px;
 	border: 1px dotted #cc4889;
-	border-radius: 20px;
+	border-radius: 10px;
+}
+.service-title {
+	text-align: center;
+}
+.service-duration {
+	text-align: right;
+	float: right;
 }
 
 @media screen and (max-width: 1000px) {
@@ -3534,6 +3552,10 @@ input, select, textarea {
 		width: auto;
 		padding: 0 2em;
 	}
+}
+
+.cancel-button {
+	background: #707070 !important;
 }
 
 
