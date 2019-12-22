@@ -3172,6 +3172,17 @@ input, select, textarea {
 	text-align: center;
 }
 
+.sticky {
+	position: fixed !important;
+	background: #f7e4ee;
+	top: 0;
+	width: 100%;
+	border-bottom: thick double #cc4889;
+}
+.sticky li {
+	background-color: #cc4889;
+}
+
 
 /****************************************
 * Index page *
