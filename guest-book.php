@@ -39,7 +39,7 @@
     <div class="container">
       <article id="main" class="special">
         <header>
-          <h2><a href="guest-book.php">Livre d'or</a></h2>
+          <h2>Livre d'or</h2>
           <p>
             Découvrez les avis de nos clients
           </p>
