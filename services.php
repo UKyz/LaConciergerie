@@ -39,7 +39,7 @@
     <div class="container">
       <article id="main" class="special">
         <header>
-          <h2><a href="services.php">Nos services</a></h2>
+          <h2>Nos services</h2>
           <p>
             Découvrez tous nos services
           </p>

@@ -40,7 +40,7 @@
           <hr class="first" />
           <section>
             <header>
-              <h3 class="pink-title">Besoin d'un coup de main ?</h3>
+              <h3 class="pink-title">Besoin d'un coup de main ?</h3 class="pink-title">
             </header>
             <p>
               Ménage, repassage, gardiennage, travaux, garde d'enfant...<br/>
@@ -141,7 +141,7 @@
         <div class="col-8 col-12-mobile imp-mobile" id="content">
           <article id="main">
             <header>
-              <h2 class="pink-title">La Conciergerie des Rosati</h2>
+              <h2>La Conciergerie des Rosati</h2>
               <p>
                 En activité depuis le 02 août 2019, cette conciergerie privée propose toutes sortes de prestations de services.
               </p>
