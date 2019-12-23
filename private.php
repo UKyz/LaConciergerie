@@ -61,7 +61,7 @@
               <div>
                 <p class="service-title">{{service.name}}</p>
                 <p>{{service.price}}<span class="service-duration">{{service.duration}}</span></p>
-                <p>{{service.description}}</p>
+                <p class="private-data-card-comment">{{service.description}}</p>
                 <button v-on:click="deleteService(service.id)">Supprimer</button>
               </div>
             </div>
@@ -130,7 +130,7 @@
             <div v-for="comment in comments" class="private-data-card">
               <div>
                 <p>{{comment.name}} ({{comment.email}})</p>
-                <p>{{comment.comment}}</p>
+                <p class="private-data-card-comment">{{comment.comment}}</p>
                 <button v-on:click="deleteComment(comment.id)">Supprimer</button>
               </div>
             </div>

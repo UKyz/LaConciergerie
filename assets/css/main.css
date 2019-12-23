@@ -2291,7 +2291,7 @@ input, select, textarea {
 		left: 0;
 		width: 100%;
 		text-align: center;
-		padding: 1.5em 0 1.5em 0;
+		padding: 1em 0 1em 0;
 		z-index: 1;
 		overflow: hidden;
 	}
@@ -3168,19 +3168,27 @@ input, select, textarea {
 /****************************************
 * Nav *
 *****************************************/
+#nav ul {
+	padding: 0 1em;
+}
 .dropotron li a, .dropotron li span {
 	text-align: center;
 }
 
 .sticky {
 	position: fixed !important;
-	background: #f7e4ee;
+	background: #2b252c;
 	top: 0;
 	width: 100%;
-	border-bottom: thick double #cc4889;
+	border-bottom: 6px solid #f7e4ee;
 }
 .sticky li {
 	background-color: #cc4889;
+}
+.sticky ul,
+.sticky ul::before,
+.sticky ul::after {
+	border: none !important;
 }
 
 
@@ -3367,9 +3375,7 @@ input, select, textarea {
 }
 .card-service-pres>p::-webkit-scrollbar-thumb {
 	background-color: rgba(204, 72, 138, 0.5);
-	outline: 1px solid slategrey;
 	border-radius: 15px;
-	border: 0;
 }
 
 
@@ -3457,7 +3463,7 @@ input, select, textarea {
 }
 
 #connect-section input {
-	text-align: centerr;
+	text-align: center;
 	margin: auto;
 	display: block;
 	background: #fafafa;
@@ -3542,6 +3548,24 @@ input, select, textarea {
 	border: 1px dotted #cc4889;
 	border-radius: 10px;
 }
+
+.private-data-card-comment {
+	height: 110px;
+	overflow: auto;
+	padding: 0 10px 0 2px;
+}
+.private-data-card-comment::-webkit-scrollbar {
+	width: 10px;
+}
+.private-data-card-comment::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 15px;
+}
+.private-data-card-comment::-webkit-scrollbar-thumb {
+	background-color: rgba(204, 72, 138, 0.5);
+	border-radius: 15px;
+}
+
 .service-title {
 	text-align: center;
 }
