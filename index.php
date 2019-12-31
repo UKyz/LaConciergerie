@@ -31,9 +31,11 @@
         <a href="#banner" class="button circled scrolly">Découvrir</a>
       </footer>
     </div>
-    <div class="">
+    <div class="inner" id="header-bottom">
     <p id="header-facebook">
-      <a href="https://www.facebook.com/Conciergerie-des-rosati-107342737410632/"><span class="icon brands fa-facebook-square"></span></a>
+      <a href="https://www.facebook.com/Conciergerie-des-rosati-107342737410632/">
+        <span class="icon brands fa-facebook-square">facebook</span>
+      </a>
     </p>
     <p id="header-phone">
       <span class="icon solid fa-phone-alt">06 16 56 43 50</span>
