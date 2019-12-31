@@ -3292,6 +3292,9 @@ input, select, textarea {
 }
 #services-search input, #services-filters-select select {
 	width: 300px;
+	width: -moz-available;          /* WebKit-based browsers will ignore this. */
+	width: -webkit-fill-available;  /* Mozilla-based browsers will ignore this. */
+	width: fill-available;
 	display: block;
 	background: #fafafa;
 	border-radius: 0.5em;
