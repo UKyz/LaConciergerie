@@ -2252,7 +2252,7 @@ input, select, textarea {
 
 	body.homepage #header {
 		height: 100vh;
-		min-height: 40em;
+		/*min-height: 40em;*/
 	}
 
 		body.homepage #header h1 {
@@ -2743,7 +2743,7 @@ input, select, textarea {
 		display: none;
 	}
 
-	@media screen and (max-width: 736px) {
+	@media screen and (max-width: 820px) {
 
 		/* Basic */
 
@@ -3209,6 +3209,9 @@ input, select, textarea {
 	margin: 20px !important;
 	border-radius: 15px;
 }
+#header-bottom {
+	width: 100%;
+}
 #header-facebook, #header-phone, #header-mail {
 	width: 33%;
 	font-weight: bold;
@@ -3218,7 +3221,6 @@ input, select, textarea {
 	float: left;
 }
 #header-facebook {
-	font-size: x-large;
 	text-align: left;
 }
 #header-phone {
@@ -3228,7 +3230,7 @@ input, select, textarea {
 #header-mail {
 	text-align: right;
 }
-#header-facebook>span::before, #header-phone>span::before, #header-mail>span::before {
+#header-facebook>a>span::before, #header-phone>span::before, #header-mail>span::before {
 	padding-right: 10px;
 }
 @media screen and (max-width: 820px) {
